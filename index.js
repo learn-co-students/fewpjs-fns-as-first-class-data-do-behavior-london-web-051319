@@ -19,7 +19,6 @@ function greet(timeString) {
   }
 }
 /* Write your implementation of displayMessage() */
-function displayMessage(greetFn) {
-  console.log(greetFn);
-  document.querySelector("h1#greeting").innerHTML = greetFn;
+function displayMessage(greetFn='Text') {
+  document.querySelector("h1#greeting").innerText = greetFn;
 }
